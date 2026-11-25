@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buyer sign in | Harvest & Home</title>
+  <link rel="stylesheet" href="styles.css?v=20261126-1">
+  <script src="app.js?v=20261126-2" defer></script>
+</head>
+<body class="auth-page" data-page="buyer-login">
+  <a class="back-home" href="index.html">← <span>Harvest & Home</span></a>
+  <main class="auth-layout">
+    <section class="auth-photo buyer-photo"><div class="auth-photo-caption"><span class="eyebrow eyebrow-light">A MARKET WITH MEANING</span><h1>Good things<br>are growing.</h1><p>Fresh from your local farmers, and ready for your table.</p></div></section>
+    <section class="auth-panel"><a class="brand auth-brand" href="index.html"><span class="brand-mark">H</span><span>harvest<span class="brand-light">&home</span></span></a><div class="auth-form-wrap"><p class="section-kicker">THE BUYER MARKET</p><h2>Welcome <em>in.</em></h2><p class="auth-lede">Sign in to shop the harvest and keep track of your orders.</p>
+      <div class="auth-tabs" role="tablist" aria-label="Account action"><button class="auth-tab is-active" type="button" data-auth-tab="login">Sign in</button><button class="auth-tab" type="button" data-auth-tab="signup">Create account</button></div>
+      <form class="auth-form" data-auth-form="buyer" data-mode="login">
+        <label data-field="name" hidden>Full name<input name="name" autocomplete="name" placeholder="Your name"></label>
+        <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" placeholder="At least 6 characters" minlength="6" required></label>
+        <p class="form-message" aria-live="polite"></p>
+        <button class="button button-green auth-submit" type="submit"><span data-submit-label>Sign in to shop</span><span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="auth-switch">Here to sell your harvest? <a href="farmer-login.html">Farmer sign in →</a></p>
+    </div><a class="auth-home-link" href="index.html">Back to home <span aria-hidden="true">↗</span></a></section>
+  </main>
+</body>
+</html>

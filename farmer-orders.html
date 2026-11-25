@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incoming orders | Harvest & Home</title>
+  <link rel="stylesheet" href="styles.css?v=20261126-1">
+  <script src="app.js?v=20261126-2" defer></script>
+</head>
+<body class="app-page" data-page="farmer-orders">
+  <header class="app-header"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>harvest<span class="brand-light">&home</span></span></a><nav class="app-nav"><a href="farmer.html">Farm dashboard</a><a href="farmer-products.html">My products</a><a class="is-current" href="farmer-orders.html">Incoming orders</a></nav><label class="location-control"><span>Market</span><select data-location-select aria-label="Market location"><option>Guntur</option><option>Vijayawada</option><option>Tenali</option></select></label><div class="app-account"><span class="account-greeting" data-account-name></span><button class="icon-button" type="button" data-logout aria-label="Sign out" title="Sign out">↗</button></div></header>
+  <main class="farmer-main">
+    <section class="farmer-welcome"><div><p class="eyebrow"><span class="eyebrow-dot"></span> STRAIGHT FROM YOUR CUSTOMERS</p><h1>Incoming <em>orders.</em></h1><p>Only orders containing your products appear here.</p></div></section>
+    <div class="market-heading"><div><p class="section-kicker">YOUR CUSTOMER ORDERS</p><h2>Orders <span class="market-result-count" data-farmer-order-count>(0)</span></h2></div><button class="quiet-link refresh-button" type="button" data-refresh-orders>Refresh ↻</button></div>
+    <section class="farmer-orders" data-farmer-orders></section>
+  </main>
+  <footer class="app-footer"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>harvest<span class="brand-light">&home</span></span></a><span>Good food, a shorter journey.</span><a href="farmer-products.html">My products ↗</a></footer>
+</body>
+</html>

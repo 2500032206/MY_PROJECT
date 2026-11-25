@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farmer dashboard | Harvest & Home</title>
+  <link rel="stylesheet" href="styles.css?v=20261126-1">
+  <script src="app.js?v=20261126-2" defer></script>
+</head>
+<body class="app-page" data-page="farmer">
+  <header class="app-header"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>harvest<span class="brand-light">&home</span></span></a><nav class="app-nav"><a class="is-current" href="farmer.html">Farm dashboard</a><a href="farmer-products.html">My products</a><a href="farmer-orders.html">Incoming orders</a></nav><label class="location-control"><span>Market</span><select data-location-select aria-label="Market location"><option>Guntur</option><option>Vijayawada</option><option>Tenali</option></select></label><div class="app-account"><span class="account-greeting" data-account-name></span><button class="icon-button" type="button" data-logout aria-label="Sign out" title="Sign out">↗</button></div></header>
+  <main class="farmer-main">
+    <section class="farmer-welcome"><div><p class="eyebrow"><span class="eyebrow-dot"></span> YOUR FARM, YOUR MARKET</p><h1>Good morning,<br><em data-farmer-name>grower.</em></h1><p>Your harvest has a home here. Keep your listings fresh and your orders moving.</p></div><button class="button button-green" type="button" data-add-listing>＋ Add produce</button></section>
+    <section class="stat-grid" aria-label="Farm overview"><article class="stat-card"><span>Orders to prepare</span><strong data-stat-pending>0</strong><small>Orders waiting for you</small></article><article class="stat-card"><span>Products listed</span><strong data-stat-products>0</strong><small>Available in the market</small></article><article class="stat-card"><span>Completed sales</span><strong data-stat-sales>0</strong><small>Orders marked delivered</small></article></section>
+    <nav class="farmer-page-links" aria-label="Manage farm">
+      <a class="farmer-page-link" href="farmer-products.html"><span class="section-kicker">YOUR STALL</span><strong>My products <span data-stat-products>0</span></strong><span>View and manage your listings <span aria-hidden="true">↗</span></span></a>
+      <a class="farmer-page-link" href="farmer-orders.html"><span class="section-kicker">BUYER ACTIVITY</span><strong>Incoming orders <span data-farmer-order-count>(0)</span></strong><span>Review orders for your produce <span aria-hidden="true">↗</span></span></a>
+    </nav>
+  </main>
+  <footer class="app-footer"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>harvest<span class="brand-light">&home</span></span></a><span>Good food, a shorter journey.</span><a href="buyer-login.html">Visit buyer market ↗</a></footer>
+  <dialog class="listing-dialog" data-listing-dialog><form method="dialog" data-listing-form><div class="drawer-header"><div><p class="section-kicker">MANAGE YOUR STALL</p><h2 data-listing-heading>List your harvest.</h2></div><button class="icon-button" type="button" data-close-listing aria-label="Close">×</button></div><label>Produce name<input name="name" placeholder="e.g. Dragon fruit" required maxlength="50"></label><div class="form-row"><label>Category<select name="category" required><option>Vegetables</option><option>Fruits</option><option>Pulses</option><option>Grains</option><option>Dairy</option><option>Spices</option><option>Dry Fruits</option><option value="Other">Other farm goods</option></select></label><label>Unit<select name="unit" required><option>kg</option><option>piece</option><option>bunch</option><option>dozen</option><option>litre</option><option>box</option><option>jar</option></select></label></div><div class="location-price-grid"><label>Guntur price (₹)<input name="priceGuntur" type="number" min="1" step="1" placeholder="80" required></label><label>Vijayawada price (₹)<input name="priceVijayawada" type="number" min="1" step="1" placeholder="85" required></label><label>Tenali price (₹)<input name="priceTenali" type="number" min="1" step="1" placeholder="75" required></label></div><div class="form-row"><label>Available quantity<input name="stock" type="number" min="1" step="1" placeholder="20" required></label><label>Product image<input name="image" type="file" accept="image/*"></label></div><label>Short description<input name="description" placeholder="A little about how it’s grown" maxlength="100"></label><p class="form-message" aria-live="polite"></p><button class="button button-green auth-submit" type="submit"><span data-listing-submit>Add to market</span><span aria-hidden="true">↗</span></button></form></dialog>
+</body>
+</html>

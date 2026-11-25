@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop the harvest | Harvest & Home</title>
+  <link rel="stylesheet" href="styles.css?v=20261126-1">
+  <script src="app.js?v=20261126-2" defer></script>
+</head>
+<body class="app-page" data-page="buyer">
+  <header class="app-header"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>harvest<span class="brand-light">&home</span></span></a><nav class="app-nav"><a class="is-current" href="buyer.html">The market</a><button class="nav-button" type="button" data-toggle-wishlist aria-pressed="false">♡ Wishlist <span class="order-count" data-wishlist-count>0</span></button><a class="nav-button" href="orders.html">My orders <span class="order-count" data-order-count>0</span></a></nav><label class="location-control"><span>Market</span><select data-location-select aria-label="Market location"><option>Guntur</option><option>Vijayawada</option><option>Tenali</option></select></label><div class="app-account"><span class="account-greeting" data-account-name></span><button class="icon-button" type="button" data-logout aria-label="Sign out" title="Sign out">↗</button></div></header>
+  <main class="market-main">
+    <section class="market-welcome"><div><p class="eyebrow"><span class="eyebrow-dot"></span> FRESH FROM YOUR FARMERS</p><h1>The good stuff,<br><em>just harvested.</em></h1><p>Shop a thoughtful selection from growers near and far.</p></div><div class="market-welcome-side"><span class="market-flower">✳</span><span>GROWN WITH CARE<br>SHARED WITH YOU</span></div></section>
+    <section class="market-toolbar" aria-label="Find produce"><div class="search-wrap"><span aria-hidden="true">⌕</span><input type="search" id="product-search" placeholder="Search produce..." aria-label="Search produce"></div><div class="category-list" role="group" aria-label="Filter by category"><button class="category-chip is-selected" data-category="All" type="button">Everything</button><button class="category-chip" data-category="Vegetables" type="button">Vegetables</button><button class="category-chip" data-category="Fruits" type="button">Fruits</button><button class="category-chip" data-category="Pulses" type="button">Pulses</button><button class="category-chip" data-category="Grains" type="button">Grains</button><button class="category-chip" data-category="Dairy" type="button">Dairy</button><button class="category-chip" data-category="Spices" type="button">Spices</button><button class="category-chip" data-category="Dry Fruits" type="button">Dry Fruits</button><button class="category-chip" data-category="Other" type="button">Other farm goods</button></div></section>
+    <div class="market-heading"><div><p class="section-kicker">GOOD GROWING, GOOD EATING</p><h2><span data-market-heading>At the market</span> <span class="market-result-count" data-result-count></span></h2></div><span class="market-sort-note">Direct from independent farmers</span></div>
+    <section class="product-grid" data-product-grid aria-live="polite"></section>
+  </main>
+  <footer class="app-footer"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>harvest<span class="brand-light">&home</span></span></a><span>Good food, a shorter journey.</span><a href="farmer-login.html">Are you a farmer? ↗</a></footer>
+
+  <div class="cart-backdrop" data-cart-backdrop></div><aside class="cart-drawer" data-cart-drawer aria-label="Shopping cart" aria-hidden="true"><div class="drawer-header"><div><p class="section-kicker">YOUR BASKET</p><h2>A little <em>goodness.</em></h2></div><button class="icon-button" type="button" data-close-cart aria-label="Close basket">×</button></div><div class="cart-items" data-cart-items></div><div class="cart-checkout" data-cart-checkout></div></aside>
+  <button class="cart-fab" type="button" data-open-cart aria-label="Open shopping basket"><span aria-hidden="true">▱</span><span>Basket</span><b data-cart-count>0</b></button>
+</body>
+</html>
